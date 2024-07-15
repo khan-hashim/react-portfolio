@@ -1,0 +1,13 @@
+.skill-icon {
+	font-size: 180%;
+	color: grey;
+	text-align: center;
+	position: relative;
+}
+.skill-icon li {
+	display: inline-block; /* or inline */
+	margin-right: 40px; /* Add spacing between list items if needed */
+}
+.text-center {
+	text-align: center; /* Align content horizontally center */
+}
