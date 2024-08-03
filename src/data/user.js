@@ -15,7 +15,7 @@ const INFO = {
 	homepage: {
 		title: "Hashim Khan",
 		description:
-			"I am a passionate and driven fourth-year Computer Science student. With a keen problem-solving mindset, I approach challenges as opportunities for growth and learning new things, I enjoy dissecting complex problems and architecting elegant solutions. I am actively seeking a Full Stack Development role where I can apply my skills and knowledge to create innovative solutions. I am eager to contribute my technical expertise, collaborate with dynamic teams, and make a meaningful impact in the world of software development.",
+			"A passionate and driven Computer Science graduate. With a keen problem-solving mindset, I approach challenges as opportunities for growth and learning new things. I am actively seeking a Full Stack Development role where I can contribute with my technical expertise, collaborate with dynamic teams, and make a meaningful impact in the world.",
 	},
 
 	about: {
@@ -101,7 +101,7 @@ const INFO = {
 		{
 			name: "Linux",
 			class: "devicon-linux-plain",
-			level: "65",
+			level: "60",
 		},
 	],
 
@@ -117,8 +117,8 @@ const INFO = {
 			level: "60",
 		},
 		{
-			name: "Docker",
-			class: "devicon-docker-plain",
+			name: "Maven",
+			class: "devicon-maven-plain",
 			level: "60",
 		},
 		{
@@ -147,8 +147,34 @@ const INFO = {
 		{
 			title: "Bidwise Web Application",
 			description:
-				"full stack web application with user authentication and authorization features, a product catalog, a bidding system allowing users to select and bid on products, payment flow enabling users to process payments upon winning a bid.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+				"Full stack web application with user authentication and authorization features, a product catalog, a bidding system to allowing bidding on products and a payment flow using Stripe API.",
+			logos: [
+				{
+					name: "Java",
+					class: "devicon-java-plain",
+					level: "95",
+				},
+				{
+					name: "Spring",
+					class: "devicon-spring-plain",
+					level: "60",
+				},
+				{
+					name: "React",
+					class: "devicon-react-plain",
+					level: "60",
+				},
+				{
+					name: "SQL",
+					class: "devicon-mysql-plain",
+					level: "60",
+				},
+				{
+					name: "Docker",
+					class: "devicon-docker-plain",
+					level: "60",
+				},
+			],
 			linkText: "View Project",
 			link: "https://github.com/khan-hashim/Bidding-WebApp",
 		},
@@ -156,8 +182,27 @@ const INFO = {
 		{
 			title: "Reviews Sentiment Analysis",
 			description:
-				" scrapes reviews of an App from Google Play and performs Sentiment Analysis on each review, trains a machine learning model to predict if each review is a feature request or bug report.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"A script that scrapes reviews of an App from Google Play, performs Sentiment Analysis on each review, trains a machine learning model to predict if each review is a feature request or bug report.",
+			logos: [
+				{
+					name: "Python",
+					class: "devicon-python-plain",
+					level: "95",
+				},
+				{
+					name: "Pandas",
+					class: "devicon-pandas-plain",
+					level: "60",
+				},
+				{
+					name: "Scitkit-learn",
+					class: "devicon-scikitlearn-plain"
+				},
+				{
+					name: "Jupyter",
+					class: "devicon-jupyter-plain"
+				},
+			],
 			linkText: "View Project",
 			link: "https://github.com/khan-hashim/App-Review-Sentiment-Analysis",
 		},
@@ -165,8 +210,29 @@ const INFO = {
 		{
 			title: "Statistics Visualizer",
 			description:
-				"application which takes user input regarding country, years and type of analysis wanted, fetches the required data from World Bank API and displays it after processing the data.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+				"An application which takes user input regarding type of analysis wanted, fetches the required data using World Bank API, performs data analytics and visualizes the results.",
+			logos: [
+					{
+						name: "Java",
+						class: "devicon-java-plain",
+						level: "95",
+					},
+					{
+						name: "Maven",
+						class: "devicon-maven-plain",
+						level: "60",
+					},
+					{
+						name: "JSON",
+						class: "devicon-json-plain",
+						level: "60",
+					},
+					{
+						name: "Eclipse",
+						class: "devicon-eclipse-plain",
+						level: "60",
+					},
+			],
 			linkText: "View Project",
 			link: "https://github.com/khan-hashim/Statisics-Visualizer",
 		},
@@ -174,8 +240,34 @@ const INFO = {
 		{
 			title: "Kafka Web Application",
 			description:
-				"ecommerce web app using MERN for an online business that allows users to browse products, add and remove products from cart and checkout after making the payment.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"An e-commerce web app using MERN for an online business that allows users to browse products, add and remove products from cart and checkout after making the payment.",
+			logos: [
+				{
+					name: "JavaScript",
+					class: "devicon-javascript-plain",
+					level: "70",
+				},
+				{
+					name: "React",
+					class: "devicon-react-plain",
+					level: "60",
+				},
+				{
+					name: "Node.js",
+					class: "devicon-nodejs-plain",
+					level: "60",
+				},
+				{
+					name: "Express",
+					class: "devicon-express-original",
+					level: "60",
+				},
+				{
+					name: "MongoDB",
+					class: "devicon-mongodb-plain",
+					level: "60",
+				},
+			],
 			linkText: "View Project",
 			link: "https://github.com/khan-hashim/Kafka-Web-App",
 		},
@@ -183,8 +275,29 @@ const INFO = {
 		{
 			title: "Portfolio Web Application",
 			description:
-				"my portfolio site (which you're currently on!). designed to showcase my skills and projects.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"My portfolio site (which you're currently on!) designed to showcase my skills and projects.",
+			logos: [
+				{
+					name: "JavaScript",
+					class: "devicon-javascript-plain",
+					level: "70",
+				},
+				{
+					name: "React",
+					class: "devicon-react-plain",
+					level: "60",
+				},
+				{
+					name: "HTML5",
+					class: "devicon-html5-plain",
+					level: "60",
+				},
+				{
+					name: "CSS",
+					class: "devicon-css3-plain",
+					level: "60",
+				},
+			],
 			linkText: "View Project",
 			link: "https://github.com",
 		},

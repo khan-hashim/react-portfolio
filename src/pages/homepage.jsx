@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
-
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,13 +6,12 @@ import {
 	faLinkedin,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-
+import Typewriter from 'typewriter-effect';
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
-
 import "./styles/homepage.css";
 import Skills from "../components/skills/skills";
 
@@ -63,10 +60,6 @@ const Homepage = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{INFO.main.title}</title>
-			</Helmet>
-
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
@@ -82,7 +75,9 @@ const Homepage = () => {
 								<div className="title homepage-title">
 									{INFO.homepage.title}
 								</div>
-
+								<div className="title homepage-title">
+									<Typewriter options={{loop: true,autoStart: true,strings: "I'm a Full Stack Developer"}}/>
+								</div>
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
@@ -92,7 +87,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.png"
+											src="homepage.jpeg"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -144,14 +139,15 @@ const Homepage = () => {
 							</a>
 						</div>
 						<div className="homepage-projects">
-							<div className="text-center">
-								<h1 style={{ fontSize: "200%" }}>
-								<span>Projects</span>
-								</h1>
+							<div className="title">
+								<span>Projects.</span>
 							</div>
 							<AllProjects />
 						</div>
-						<div className="homepage-projects">
+						<div className="homepage-skills">
+							<div className="title">
+								<span>languages, tools, and frameworks.</span>
+							</div>
 							<Skills />
 						</div>
 						<div className="page-footer">

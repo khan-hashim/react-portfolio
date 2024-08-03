@@ -1,3 +1,9 @@
+.all-skills-container {
+	text-align: center;
+	padding-top: 40px;
+	margin-left: -35px;
+	margin-right: -35px;
+}
 .skill-icon {
 	font-size: 180%;
 	color: grey;

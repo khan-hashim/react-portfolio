@@ -3,12 +3,10 @@ import INFO from "../../data/user";
 import "./styles/skills.css";
 
 const Skills = () => {
-	let sectionName = "";
 	let skills1 = [];
 	let skills2 = [];
 	let skills3 = [];
-
-	sectionName = "languages, tools, and frameworks";
+	
 	skills1 = INFO.icons1.map((skill, i) => (
 		<li key={i}>
 			<span>
@@ -59,13 +57,7 @@ const Skills = () => {
 
 	return (
 		<section>
-			<div className="text-center">
-				<div>
-					<h1 style={{ fontSize: "200%" }}>
-						<span>{sectionName}</span>
-					</h1>
-				</div>
-				<div>
+				<div className="all-skills-container">
 					<ul className="list-inline mx-auto skill-icon">
 						{skills1}
 					</ul>
@@ -76,7 +68,6 @@ const Skills = () => {
 						{skills3}
 					</ul>
 				</div>
-			</div>
 		</section>
 	);
 };

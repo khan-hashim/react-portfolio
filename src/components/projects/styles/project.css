@@ -26,25 +26,37 @@
 	padding: 30px;
 }
 
-.project-logo {
-	width: 30px;
+.project-icon {
+	font-size: 180%;
+	color: grey;
+	text-align: left;
+	position: relative;
+}
+.project-icon:hover {
+	color: var(--primary-color);
 }
 
-.project-logo img {
-	width: 100%;
+.project-icon li {
+	display: inline-block; /* or inline */
+	margin-right: 10px; /* Add spacing between list items if needed */
 }
-
 .project-title {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
+	text-align: center;
 	font-size: 16px;
-	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
 }
 
 .project-description {
 	color: var(--secondary-color);
+	display: flex;                /* Enables flexbox layout */
+  	justify-content: center;      /* Centers the text horizontally */
+  	align-items: center;          /* Centers the text vertically */
+  	height: 150px;                /* Set a fixed height or use a percentage */
+  	width: 250px;                 /* Set a fixed width or use a percentage */
+  	text-align: center;
 }
 
 .project-link {
@@ -52,7 +64,7 @@
 	align-items: center;
 	color: var(--secondary-color);
 	font-size: 12px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .project-link-icon {
