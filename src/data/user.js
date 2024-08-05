@@ -23,12 +23,6 @@ const INFO = {
 		description:
 			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
 	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
 	icons1: [
 		{
 			name: "Java",
@@ -299,7 +293,28 @@ const INFO = {
 				},
 			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/khan-hashim/react-portfolio",
+		},
+	],
+	experiences : [
+		{
+		  title: "Research Assistant",
+		  company: "York University",
+		  date: "Aprril 2024 - July 2024",
+		  description: [
+			"Conducted research on the use of Large Language Models (LLMs) and GenAI models, such as ChatGPT, in designing software architectures from textual descriptions by leveraging architecture styles and design pattern.",
+			"Evaluated performance of fine-tuning pre-trained LLMs in designing software systems."
+		  ],
+		},
+		{
+		  title: "Automation Engineering Intern",
+		  company: "TD Bank",
+		  date: "May 2023 - August 2023",
+		  description: [
+			"Designed and implemented an Automation framework in Java improving efficiency for automating test cases by 40% leading to an overall 30% increase in test automation by the whole team.",
+			"Developed a comprehensive Regression test suite with over 100 automated tests and deployed with Jenkins for Continuous Testing, providing 80% test coverage and eliminating manual testing.",
+			"Worked in an Agile Pod from QA team, collaborating in a cross functional team with all stakeholders to perform testing to verify functionality and alignment with business requirements of new user stories."
+		  ],
 		},
 	],
 };

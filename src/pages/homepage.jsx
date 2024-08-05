@@ -14,6 +14,7 @@ import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import "./styles/homepage.css";
 import Skills from "../components/skills/skills";
+import Works from "../components/homepage/works";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -140,9 +141,15 @@ const Homepage = () => {
 						</div>
 						<div className="homepage-projects">
 							<div className="title">
-								<span>Projects.</span>
+								<span>projects.</span>
 							</div>
 							<AllProjects />
+						</div>
+						<div className="homepage-works">
+							<div className="title">
+								<span>work experience.</span>
+							</div>
+							<Works/>
 						</div>
 						<div className="homepage-skills">
 							<div className="title">

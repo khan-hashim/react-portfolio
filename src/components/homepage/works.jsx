@@ -1,47 +1,33 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-
-import Card from "../common/card";
-
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import "react-vertical-timeline-component/style.min.css";
 import "./styles/works.css";
+import INFO from "../../data/user";
+const WorkIcon = () => <></>;
 
 const Works = () => {
 	return (
-		<div className="works">
-			<Card
-				icon={faBriefcase}
-				title="Work"
-				body={
-					<div className="works-body">
-						<div className="work">
-							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-
-						<div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-					</div>
-				}
-			/>
-		</div>
+		<div className="work">
+			<VerticalTimeline lineColor={'rgb(128, 128, 128)'}>
+        		{INFO.experiences.map((experience, index) => (
+          			<VerticalTimelineElement
+            			key={index}
+						contentArrowStyle={{ borderRight: "10px solid  rgb(128, 128, 128)" }}
+            			date={experience.date}
+            			icon={<WorkIcon />}
+            			iconStyle={{ background: 'rgb(128, 128, 128)', color: '#ccc' }}
+          			>
+            			<h3 className="timeline-title">{experience.title}</h3>
+            			<h4 className="timeline-title">{experience.company}</h4>
+            			<ul>
+              				{experience.description.map((point, i) => (
+                				<li key={i} className="work-description">{point}</li>
+              				))}
+            			</ul>
+          			</VerticalTimelineElement>
+        		))}
+      		</VerticalTimeline>
+	  	</div>
 	);
 };
 
